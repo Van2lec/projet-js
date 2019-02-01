@@ -1,0 +1,103 @@
+
+
+h2 {
+  background-color: rgb(92,173,211);
+  padding: 15px 40px;
+  color: white;
+  font-weight: bold;
+}
+h3 {
+  font-weight: bold;
+}
+
+section {
+  background-color: rgb(245,245,245);
+  padding-bottom: 20px;
+
+}
+.two {display: none;}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+article ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border: solid rgb(92,173,211) 5px;
+  border-radius: 5%;
+  width: 30%;
+  margin-bottom: 0;
+  min-width: 500px;
+  min-height: 600px;
+  margin-top: 20px;
+
+}
+
+.resOk {
+  display: none;
+}
+
+li {
+ width: 100%;
+ text-align: center;
+}
+
+span {
+  margin-left: 5%;
+}
+
+
+footer {
+ background-color: rgb(92,173,211);
+}
+
+footer li {
+  margin: 5px 0px;
+}
+
+#canvas {
+  border: 2px solid black;
+  display: none;
+  margin: auto;
+}
+
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+
+}
+
+@media (min-width: 1200px) {
+
+}
+#mapid{
+  width: 50%;
+  border: solid rgb(92,173,211) 5px;
+  border-radius: 5%;
+  margin-top: 20px;
+  min-height: 650px;
+  min-width: 768px;
+}

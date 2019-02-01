@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>Location Vélo</title>
+  <link href="./public/css/style.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+
+</head>
+</head>
+<body>
+  <div class="container-fluid">
+
+    <header class="row">
+      <div class="col-lg-12">3 colonnes</div>
+    </header>
+
+    <div class="row">
+      <section class="col-lg-12">
+
+        <h2>Choisissez Votre Station :</h2>
+<article>
+        <div id="mapid"></div>
+
+
+          <ul>
+                <li>
+                  <h3>Station Sélectionnée :</h3>
+
+                </li>
+
+                <li class="one">
+                  Statut :<span id="status"></span>
+                </li>
+
+                <li>
+                  Nom :<span id="name"></span>
+                </li>
+
+                <li class="one">
+                  Adresse :<span id="adress"></span>
+                </li>
+
+                <li class="one">
+                  Capacité d'Accueil :<span id="capacity"></span>
+                </li>
+
+                <li class="one">
+                  Vélo Disponible :<span id="disponibility"></span>
+                </li>
+
+                <li>
+                  <input id="validate" type="button" value="valider"/>
+
+                </li>
+
+
+                <li class="two">
+                  <label for="user_surname">Nom :</label>
+                  <input type="text" name="user_surname" id="user_surname"/>
+                </li>
+
+                <li class="two">
+                  <label for="user_name">Prénom :</label>
+                  <input type="text" name="user_name" id="user_name"/>
+                </li>
+                <li class="two">
+                  <input id="reserved" type="button" value="Reserver"/>
+                </li>
+                <li>
+                  <canvas id="canvas"></canvas>
+                </li>
+
+
+
+          </ul>
+
+</article>
+      </section>
+    </div>
+
+      <footer class="row" >
+        <ul>
+
+              <li>
+                <h3>Information Sur La Réservation :</h3>
+              </li>
+
+              <li  class="resOk">
+                Vous avez une réservation en cours à la station :
+                <span id="res_name"></span>
+                <span id="res_adress"></span>
+              </li>
+              <li class="resOk">
+                Mr : <span id="u_name"></span>
+                <span id="u_surname"></span>
+              </li>
+
+
+              <li id="resNon">
+                Aucune Réservation en cours !
+              </li>
+        </ul>
+      </footer>
+
+  </div>
+</body>
+<script src="public/js/ajax.js"></script>
+<script src="public/js/script.js"></script>
+</html>
